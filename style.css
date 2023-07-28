@@ -1,0 +1,157 @@
+:root {
+    /*-- Já deixo as cores no ponto de usar--*/
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url(img/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /*--ele deixa eu mexer só a metade da tela (inspecionar)--*/
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    /*--deixa os cantos arredondados--*/
+    padding: 1em;
+    /*--essa medida aumenta comforme a fonte--*/
+    color: var(--branco-principal);
+    display: block;
+    /*--ocupa o espaço inteiro--*/
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao_segundo {
+    background-color: transparent;
+    border: 2px solid var(--cinza-secundario);
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.secundaria img {
+    width: 80%;
+}
+
+.secundaria {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 0 1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.secundaria__botao {
+    display: inline-block;
+    /*--Ele alinha e deixa em um bloco fechando os itens--*/
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    /*--Esse comando tira os simbolos da frente da lista--*/
+    margin: 5em, 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    /*--Mexe com o tamanho da fonte--*/
+    color: var(--branco-principal);
+}
+
+.dispositivos__item {
+    /*--Eu coloquei o nome (__item), pra buscar os itens dentro da tag--*/
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.rodape__logo {
+    margin-top: 8rem;
+    height: 35px;
+    width: 102px;
+}
+
+.rodape__lista {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    text-decoration: none;
+    list-style-type: none;
+}
+.lista__link {
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--cinza-secundario);
+}
+.rodape__texto {
+    font-size: 16px
+}
